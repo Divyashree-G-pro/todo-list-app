@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f7d6e0; /* Light pink background */
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 100vh;
+}
+
+.App {
+  background-color: #f0f0f5; /* Soft light grey for the app background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  width: 400px;
+  text-align: center;
+  color: #333; /* Soft dark grey for the text */
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #6a4c93; /* Soft lavender color for the title */
+}
+
+input {
+  padding: 15px;
+  width: 70%;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  background-color: #e8eaf6; /* Soft purple-grey for input background */
+  color: #333; /* Soft dark grey for text */
+}
+
+button {
+  padding: 15px;
+  background-color: #a4c3b2; /* Soft pastel green for the button */
   color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #8eb39d; /* Slightly darker soft green for hover */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  background-color: #e2e3e8; /* Soft muted grey for to-do items */
+  padding: 10px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  color: #333; /* Soft dark grey */
+}
+
+.todo-text {
+  flex-grow: 1;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.todo-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.todo-icons button {
+  background-color: transparent;
+  border: none;
+  color: #6a4c93; /* Soft lavender for the icons */
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.todo-icons button:hover {
+  color: #533778; /* Slightly darker lavender on hover */
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #999;
 }
